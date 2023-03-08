@@ -170,6 +170,8 @@ margin-left: auto;
 .address-link:is(:hover, :focus) {
     color:var(--hover-bg-color);
 }
+
+
 /*-----------------HERO--------------------*/
 .hero {
     background-color:var(--main-bg-color);
@@ -178,17 +180,17 @@ margin-left: auto;
                     rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
     text-align: center;
-    padding-bottom: 188px;
-    padding-top: 188px;
+    padding-bottom: 112px;
+    padding-top: 112px;
     margin: 0 auto;
     max-width: 1440px;
 
 }
 .hero-title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color:var(--second-title-color);
 }
@@ -434,14 +436,17 @@ background-color: var(--hover-bg-color);
     flex-wrap: wrap;
 }
 
+.about-item {
+    width: 100%;
+}
 
 .thumb {
     display: none;
-    /* min-height: 112px;
+    min-height: 112px;
     background-color: #F4F4FD;
     border-radius: 4px;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     
      }
 
@@ -455,7 +460,6 @@ background-color: var(--hover-bg-color);
         text-align: center;
 }
 .about-text {
-    width: 356px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -476,12 +480,19 @@ background-color: var(--hover-bg-color);
 
 .team {
     background-color: #F4F4FD;
-    padding-bottom: 110px;
+    /* padding-bottom: 110px; */
+}
+
+.small-container {
+    max-width: 294px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .team-list {
     display: flex;
     margin-top: 72px;
     gap: 24px;
+    flex-wrap: wrap;
     }
 
 .team-container{
@@ -531,21 +542,25 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .social-link:is(:hover, :focus) {
     background-color: var(--hover-bg-color);
 }
+
+
+
 /*----------------CUSTOMERS-----------------*/
 .customers {
-padding-top: 130px;
-    padding-bottom: 120px;
+padding-top: 96px;
+    padding-bottom: 96px;
 }
 .customers-list {
     display: flex;
-    gap: 24px;
+    gap: 72px 16px;
     justify-content: center;
     padding-left: 0px;
     padding-right: 0px;
- 
+    flex-wrap: wrap;
+     
 }
 .customers-item {
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 .customers-link {
@@ -576,13 +591,19 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .logo-soc {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 72px;
+    flex-direction: column;
 
 }
 .social-block {
-    margin-left: 120px;
+    margin-left: auto;
    margin-right: auto;
 }
 .footer-logo{
+display: inline-block;
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 800;
@@ -600,21 +621,22 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
     background-color:var(--main-bg-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
-    /*padding-left: 156px;*/
+    padding-top: 97.5px;
+    padding-bottom: 96px;
     margin: 0 auto;
     max-width: 1440px;
-    max-height: 310px;
+    text-align: center;
+    /* max-height: 310px; */
 }
 
 .footer-text {
-    margin-top: 16px;
+    margin-top: 17.5px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #E7E9FC;
         width: 264px;
+        text-align: left;
     }
 
 .footer-soc-list {
@@ -650,21 +672,35 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         color:var(--second-title-color);
         margin-bottom: 16px;
 }
-   .subscribe-text {
+
+.container-logo-soc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+}
+.subscribe {
+width: 100%;
+
+}
+.subscribe-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-title-color);
     margin-bottom: 16px;
+    
  }
- .subscribe-form {
+ 
+.subscribe-form {
     display: flex;
-    gap: 24px;
+    row-gap: 16px;
+    flex-wrap: wrap; 
+    flex-direction: column;
+   align-items: center;
+   
  }
- .email {
-    display: block;
- }
+ 
  .subscribe-btn {
     display: inline-flex;
     padding: 8px 24px;
@@ -707,7 +743,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
  
 .email {
-    width: 264px;
+    display: block;
+    width: 100%;
     height: 40px;
     font-weight: 400;
     font-size: 12px;
