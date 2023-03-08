@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+.about-list {
+    display: flex;
+    row-gap: 72px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
