@@ -43,6 +43,21 @@
     text-align: left;
 }
 
+/*---------------What are we doing----------*/
+
+.doing-container {
+    display: block;
+}
+.doing {
+    padding-bottom: 120px;
+}
+
+.doing-list {
+    display: flex;
+    gap: 24px;
+}
+
+
 /*----------------CUSTOMERS-----------------*/
 
 .customers {
@@ -69,6 +84,7 @@
     justify-content: center;
     align-items: center; 
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .social-block {
@@ -76,11 +92,11 @@
     margin-right: 80px;
 }
 .container-logo-soc {
-    gap: 120px;
+    gap: 0;
     justify-content: start;
 }
 .footer {
-    text-align: center;
+    text-align: left;
 }
 .email {
     width: 264px;
