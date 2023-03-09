@@ -54,15 +54,27 @@
 .container-logo-soc {
     display: flex;
     flex-direction: row;
-    /* gap: 24px; */
+    gap: 24px; 
     justify-content: start;
     }
-  .subscribe-form {
-      display: flex;
-      column-gap: 16px;
-      flex-wrap: wrap;
-      width: calc((100% - 24px) / 2);
-    }
+ 
+.social-block {
+    margin-left: 0;
+    margin-right: auto;
+}
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    align-items: center;
+}
+.email {
+    width: 264px;
+    height: 40px;
+}
+
+
+
 
 }
 

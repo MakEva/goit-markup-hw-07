@@ -61,7 +61,31 @@
     padding-right: 0px;
 
 }
+/*----------------FOOTER--------------------*/
 
+
+.logo-soc {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+}
+
+.social-block {
+    margin-left: 120px;
+    margin-right: 80px;
+}
+.container-logo-soc {
+    gap: 120px;
+    justify-content: start;
+}
+.footer {
+    text-align: center;
+}
+.email {
+    width: 264px;
+    height: 40px;
+}
 }
 
 
