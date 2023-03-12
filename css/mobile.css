@@ -1,12 +1,12 @@
 @media screen and (min-width: 480px) {
     .container {
         max-width: 426px;
-    }
-/* .small-container {
-    max-width: 294px;
-    padding: 0 15px;
-    margin: 0 auto;
-} */
+}
+.menu-tel-link {
+    font-size: 36px;
+    
+}
+    
 
 }
     
